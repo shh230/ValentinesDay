@@ -79,7 +79,7 @@ function startHeartAnimation() {
 				if (b >= c.length) {
 					clearInterval(e)
 				}
-			}, 75)
+			}, 15)
 		});
 		return this
 	}
@@ -125,5 +125,5 @@ function adjustCodePosition() {
 }
 
 function showLoveU() {
-	$("#loveu").fadeIn(3000)
+	$("#loveu").fadeIn(1000)
 };

@@ -13,11 +13,25 @@
 <body>
 <div id="mainDiv">
 	<div id="content">
+		<div id="code">
+			<span class="comments">🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹</span><br/>
+			<span class="comments">🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹</span><br/>
+			<span class="comments">🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹</span><br/>
+			<span class="comments">认识你的第一天，我就被你的眼神所征服，那时候我已知道，我已经是你一生的俘虏！</span><br/>
+			<span class="comments">你对我来说，就是早晨的面包，晚上的香蕉，山东人的大蒜，四川人的辣椒。</span><br/>
+			<span class="comments">如果不能牵着你的手，与你相守余生，我宁愿选择一人孤老。没有你的世界，早已不完整。</span><br/>
+			<span class="comments">人生只有两次幸运就好，一次遇见你，一次走到底，爱不会缺席但会姗姗来迟，晚点遇见你，余生都是你。</span><br/>
+			<span class="comments">知道我和唐僧有什么区别吗？唐僧想取经，而我想娶你！</span><br/>
+			<span class="comments">亲爱的，嫁给我！！！</span><br/>
+			<span class="comments">🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹</span><br/>
+			<span class="comments">🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹</span><br/>
+			<span class="comments">🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹</span><br/>
+		</div>
 		<div id="loveHeart">
 			<canvas id="garden"></canvas>
 			<div id="words">
 				<div id="messages">
-					亲爱的，和你在一起已经
+					亲爱的，咱两在一起的时间已经：
 					<div id="elapseClock"></div>
 				</div>
 				<div id="loveu">
@@ -33,7 +47,7 @@
 	var offsetY = $("#loveHeart").height() / 2 - 55;
 	var together = new Date();
 	// 此处月份介于 0 ~ 11 之间。用本地时间表示，如 8 月要用 7 表示。
-	together.setFullYear(2020, 06, 14);
+	together.setFullYear(2019, 06, 14);
 	together.setHours(18);
 	together.setMinutes(0);
 	together.setSeconds(0);
@@ -53,9 +67,12 @@
 			startHeartAnimation();
 		}, 0);
 
+		timeElapse(together);
 		setInterval(function () {
 			timeElapse(together);
 		}, 500);
+		adjustCodePosition();
+		$("#code").typewriter();
 	}
 </script>
 </body>

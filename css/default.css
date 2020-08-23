@@ -43,7 +43,7 @@ body {
 
 #elapseClock .digit {
     font-family: "digit";
-    font-size: 36px
+    font-size: 24px
 }
 
 #loveu {
@@ -71,7 +71,7 @@ body {
     height: 400px;
     color: #333;
     font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
-    font-size: 12px
+    font-size: 16px
 }
 
 #code .string {
@@ -92,7 +92,7 @@ body {
 }
 
 #code .comments {
-    color: #3f7f5f
+    color: #ffffff
 }
 
 #copyright {
